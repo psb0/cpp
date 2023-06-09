@@ -12,7 +12,7 @@ int main() {
 	sort(arr, arr+31, greater<double>());
 	for (int i = 0; i < 31; i++) fout << arr[i] << endl;
 
-	cout << "sort_after.txt ÆÄÀÏÀ» È®ÀÎÇØº¸¼¼¿ä." << endl;
+	cout << "sort_after.txt Ã†Ã„Ã€ÃÃ€Â» ÃˆÂ®Ã€ÃÃ‡Ã˜ÂºÂ¸Â¼Â¼Â¿Ã¤." << endl;
 
 	fin.close(); fout.close();
 	return 0;
