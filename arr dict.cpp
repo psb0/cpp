@@ -5,8 +5,8 @@
 using namespace std;
 
 int main() {
-	ifstream fin("µ¿¹°»çÀü.txt");
-	if (!fin) { cerr << "»çÀü ¿­±â ½ÇÆĞ"; return 0; }
+	ifstream fin("ë™ë¬¼ì‚¬ì „.txt");
+	if (!fin) { cerr << "ì‚¬ì „ ì—´ê¸° ì‹¤íŒ¨"; return 0; }
 	string m[100][2];
 	int size = 0;
 
@@ -17,15 +17,15 @@ int main() {
 	}
 	fin.close();
 
-	print_2dim_array(m,size); /* ÀÌÂ÷¿ù ¹è¿­ ³»¿ë Ãâ·Â*/
+	print_2dim_array(m,size); /* ì´ì°¨ì›” ë°°ì—´ ë‚´ìš© ì¶œë ¥*/
 	cout << "---------------------------------" << endl;
-	cout << "ÃÑ µ¿¹° ¼ö = " << size << endl;
+	cout << "ì´ ë™ë¬¼ ìˆ˜ = " << size << endl;
 	cout << "---------------------------------" << endl;
 
 	string a;
 	int b = size - 1;
 	while (true) {
-		cout << "Ã£°í ½ÍÀº µ¿¹°: ";
+		cout << "ì°¾ê³  ì‹¶ì€ ë™ë¬¼: ";
 		getline(cin, a);
 		if (a == "exit") break;
 		for (int i = 0; i < size; i++) {
@@ -34,9 +34,9 @@ int main() {
 				break;
 			}
 			if (i == b) {
-				cout << "¹Ìµî·Ï µ¿¹°ÀÔ´Ï´Ù." << endl;
+				cout << "ë¯¸ë“±ë¡ ë™ë¬¼ì…ë‹ˆë‹¤." << endl;
 			}
 		}//for
 	}
-	cout << "ÀÌ¿ëÇØÁÖ¼Å¼­ °¨»çÇÕ´Ï´Ù." << endl;
+	cout << "ì´ìš©í•´ì£¼ì…”ì„œ ê°ì‚¬í•©ë‹ˆë‹¤." << endl;
 }
