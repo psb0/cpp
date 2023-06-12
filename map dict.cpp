@@ -6,8 +6,8 @@
 using namespace std;
 
 int main() {
-	ifstream fin("µ¿¹°»çÀü.txt");
-	if (!fin) { cerr << "»çÀü ¿­±â ½ÇÆĞ"; return 0; }
+	ifstream fin("ë™ë¬¼ì‚¬ì „.txt");
+	if (!fin) { cerr << "ì‚¬ì „ ì—´ê¸° ì‹¤íŒ¨"; return 0; }
 
 	map<string, string> m;
 	string a, b;
@@ -20,19 +20,19 @@ int main() {
 	print_map(m);
 
 	cout << "---------------------------------" << endl;
-	cout << "ÃÑ µ¿¹° ¼ö = " << m.size() << endl;
+	cout << "ì´ ë™ë¬¼ ìˆ˜ = " << m.size() << endl;
 	cout << "---------------------------------" << endl;
 
 	while (true) {
-		cout << "Ã£°í ½ÍÀº µ¿¹°: ";
+		cout << "ì°¾ê³  ì‹¶ì€ ë™ë¬¼: ";
 		getline(cin, a);
 		if (a == "exit")	break;
 
 		if (m.count(a) == 0)
-			cout << "¹Ìµî·Ï µ¿¹°ÀÔ´Ï´Ù." << endl;
+			cout << "ë¯¸ë“±ë¡ ë™ë¬¼ì…ë‹ˆë‹¤." << endl;
 		else
 			cout << "-->" << m[a] << endl;
 	}//while end
 
-	cout << "ÀÌ¿ëÇØÁÖ¼Å¼­ °¨»çÇÕ´Ï´Ù!" << endl;
+	cout << "ì´ìš©í•´ì£¼ì…”ì„œ ê°ì‚¬í•©ë‹ˆë‹¤!" << endl;
 }
