@@ -7,18 +7,18 @@ int main() {
 	fout.open("movie.txt");
 
 	if (!fout) {
-		cerr << "ÆÄÀÏ ¿­½Ã ½ÇÆÐ";
+		cerr << "íŒŒì¼ ì—´ì‹œ ì‹¤íŒ¨";
 		return 0;
 	}
 
 	int age = 50;
-	string actor = "Å°¾Æ´© ¸®ºê½º", movie = "John Wick";
+	string actor = "í‚¤ì•„ëˆ„ ë¦¬ë¸ŒìŠ¤", movie = "John Wick";
 	fout << age << endl;
 	fout << actor << endl;
 	fout << movie << endl;
 
 	fout.close();
 
-	cout << "movie.txt ÆÄÀÏÀ» È®ÀÎÇØº¸¼¼¿ä." << endl;
+	cout << "movie.txt íŒŒì¼ì„ í™•ì¸í•´ë³´ì„¸ìš”." << endl;
 
 }
